@@ -2,21 +2,22 @@
 let currentTheme = 'dark';
 const projects = {
     1: {
-        title: "Smart Home Hub",
-        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23007bff' opacity='0.1'/%3E%3Ccircle cx='200' cy='125' r='60' fill='%23007bff' opacity='0.3'/%3E%3Cpath d='M140 125 L260 125 M200 65 L200 185' stroke='%23007bff' stroke-width='3'/%3E%3Ccircle cx='140' cy='100' r='8' fill='%23007bff'/%3E%3Ccircle cx='260' cy='150' r='8' fill='%23007bff'/%3E%3Ctext x='200' y='220' text-anchor='middle' fill='%23007bff' font-family='Arial' font-size='16'%3ESmart Home Hub%3C/text%3E%3C/svg%3E",
-        description: "A comprehensive IoT hub that serves as the central control point for smart home devices. Features include voice control integration, real-time device monitoring, automated scheduling, and seamless mobile app connectivity.",
-        technologies: ["ESP32", "MQTT", "React Native", "Node.js", "SQLite"],
-        features: [
-            "Voice control via Alexa and Google Assistant",
-            "Real-time device status monitoring",
-            "Automated lighting and climate control",
-            "Mobile app for remote control",
-            "Energy usage analytics",
-            "Security system integration"
-        ],
-        challenges: "Managing multiple communication protocols and ensuring reliable connectivity across diverse IoT devices while maintaining low latency and high security.",
-        github: "https://github.com/yourusername/smart-home-hub",
-        demo: "https://your-demo-link.com"
+        title: "BEAUTY SALON WEBSITE",
+        image: "images/salon_img.jpg",
+        description: "A fully responsive beauty salon website that serves as an online hub for clients. Features include an integrated booking system, service catalog, client testimonials, and seamless mobile-friendly design for an optimized user experience.",
+        technologies: ["HTML", "CSS", "JavaScript"],
+features: [
+    "Integrated online booking system used FRESHA platform for seamless appointment scheduling",
+    "Service catalog showcasing treatments and packages",
+    "Client testimonials and reviews",
+    "Mobile-friendly and responsive design",
+    "SEO-optimized for better visibility",
+    "Contact form for inquiries and appointment requests",
+     "Interactive map showing salon location"
+],
+        challenges: "Managing responsive layouts, seamless booking integration, and fast, secure client interactions across devices and browsers, while configuring each service with pricing in Fresha, optimizing image sizes for load time, and collaborating with the client on brand colors and styling.",
+        github: "https://github.com/TCHEUFFA-DARREN-RAYAN/SAMIRA-WEBSITE",
+        demo: "https://samirabeautician.com/"
     },
     2: {
         title: "Industrial IoT Monitor",
