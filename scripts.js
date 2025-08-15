@@ -639,4 +639,24 @@ window.addEventListener('scroll', revealSections);
 
 // Initialize reveal on load
 document.addEventListener('DOMContentLoaded', revealSections);
-        
+
+// name animation 
+
+const name = "TCHEUFFA DARREN RAYAN";
+let i = 0;
+const container = document.getElementById("typewriter");
+
+function type() {
+  if (i < name.length) {
+    container.textContent += name[i];
+    i++;
+    setTimeout(type, 100); // typing speed
+  } else {
+    setTimeout(() => {
+      container.textContent = ""; // erase and repeat
+      i = 0;
+      type();
+    }, 2000);
+  }
+}
+type();

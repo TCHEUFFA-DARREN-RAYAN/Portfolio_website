@@ -13,6 +13,11 @@
     --shadow: 0 4px 20px rgba(0, 212, 255, 0.1);
     --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
+  .letter {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
 
 /* Light Theme Colors */
 [data-theme="light"] {
@@ -322,6 +327,7 @@ h4 { font-size: 1.5rem; }
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-family: 'lato';
 }
 
 .hero-subtitle {
@@ -870,4 +876,29 @@ h4 { font-size: 1.5rem; }
 /* Dark/Light theme transition */
 * {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+
+@keyframes colorFade {
+  0%   { color: #a0c4ff; }  
+  25%  { color: #598abc; }  
+  50%  { color: #6699cc; }  
+  75%  { color: #4a79a8; }  
+  100% { color: #072e51; }  
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.header-name-color {
+  font-size: 3em;
+  animation: colorFade 3s infinite;
+  font-family: 'Lato';
+}
+
+.header-name-bounce  {
+  display: inline-block;
+  animation: bounce 1s infinite;
+  animation-delay: calc(var(--i) * 0.1s);
 }
