@@ -75,19 +75,21 @@ features: [
         demo: "https://github.com/TCHEUFFA-DARREN-RAYAN/MIXED-PROJECT-CONTRIBUTIONS/blob/master/README.md"
     },
     5: {
-        title: "Mesh Network Protocol",
-        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23007bff' opacity='0.1'/%3E%3Cpath d='M80 125 Q150 75 200 125 T320 125' stroke='%23007bff' stroke-width='3' fill='none'/%3E%3Cpath d='M200 125 Q250 175 320 125' stroke='%23007bff' stroke-width='2' fill='none' opacity='0.7'/%3E%3Cpath d='M80 125 Q120 175 200 125' stroke='%23007bff' stroke-width='2' fill='none' opacity='0.7'/%3E%3Ccircle cx='80' cy='125' r='10' fill='%23007bff'/%3E%3Ccircle cx='200' cy='125' r='10' fill='%23007bff'/%3E%3Ccircle cx='320' cy='125' r='10' fill='%23007bff'/%3E%3Ccircle cx='150' cy='75' r='8' fill='%23007bff' opacity='0.8'/%3E%3Ccircle cx='250' cy='175' r='8' fill='%23007bff' opacity='0.8'/%3E%3Ctext x='200' y='220' text-anchor='middle' fill='%23007bff' font-family='Arial' font-size='16'%3EMesh Network%3C/text%3E%3C/svg%3E",
-        description: "Custom wireless mesh networking protocol designed for IoT devices, featuring self-healing network topology, efficient routing algorithms, and low-power operation.",
-        technologies: ["Zigbee", "C/C++", "Thread", "OpenThread", "Wireshark"],
-        features: [
-            "Self-healing network topology",
-            "Multi-hop communication",
-            "Efficient routing algorithms",
-            "Low-power mesh networking",
-            "Scalable network architecture",
-            "Network diagnostics tools"
-        ],
-        challenges: "Developing efficient routing algorithms that adapt to changing network topology while minimizing power consumption and maintaining message reliability.",
+        title: "ESP32 Smart Parking Device",
+        image: "images/esp32.webp",
+        description: "A comprehensive smart parking system built on ESP32 that integrates ultrasonic and magnetic sensors for accurate vehicle detection. The system monitors environmental conditions (temperature, humidity, snow), synchronizes parking spot data via NTP time, and supports optional remote monitoring and energy-saving LED indicators. Designed as a modular IoT solution for urban parking management",
+        technologies: [ "C / C++",  "Thread", "HTML",  "CSS", "JavaScript", "C++ / Arduino",  "SQL",  "OTA Updates",  "Firebase",  "Node.js",  "Arduino IDE",  "Git"],
+        features:[
+  "Real-time vehicle detection using ultrasonic and magnetic sensors",
+  "Environmental monitoring (temperature, humidity, snow detection)",
+  "Automatic parking spot status updates",
+  "Energy-efficient RGB LED indicators with night/day behavior",
+  "Wi-Fi connectivity with captive portal fallback",
+  "Over-the-air firmware updates for easy maintenance",
+  "Optional GPS tracking and location registration",
+  "Remote monitoring via web dashboard"
+],
+        challenges: "Understanding sensor datasheets to implement correct methods, testing multiple sensors for accurate detection, and organizing 3000+ lines of code into manageable classes.",
         github: "https://app.cmngsn.com/page/e55aae70-7b1b-11f0-b9b8-f7c7823f8d90",
         demo: "https://app.cmngsn.com/page/e55aae70-7b1b-11f0-b9b8-f7c7823f8d90"
     },
