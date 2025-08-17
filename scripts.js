@@ -5,7 +5,7 @@ const projects = {
         title: "BEAUTY SALON WEBSITE",
         image: "images/salon_img.jpg",
         description: "A fully responsive beauty salon website that serves as an online hub for clients. Features include an integrated booking system, service catalog, client testimonials, and seamless mobile-friendly design for an optimized user experience.",
-        technologies: ["HTML", "CSS", "JavaScript"],
+        technologies: ["HTML", "CSS", "JavaScript","Git"],
 features: [
     "Integrated online booking system used FRESHA platform for seamless appointment scheduling",
     "Service catalog showcasing treatments and packages",
@@ -23,7 +23,7 @@ features: [
         title: "Laval School Website",
         image: "images/laval_website.jpg",
         description: "Developed a responsive and user-friendly school website to provide easy access to academic information, announcements, and resources for students, teachers, and parents, ensuring better communication and engagement.",
-        technologies: ["HTML", "CSS", "JavaScript", "Json"],
+        technologies: ["HTML", "CSS", "JavaScript", "Json","Git"],
         features: [
             "Student & Teacher Profiles",
             "Downloadable Resources",
@@ -43,7 +43,7 @@ features: [
         title: "Computer Muted App",
         image: "images/scheduler .png",
         description: "A simple and efficient Windows Forms application that allows users to schedule automatic system muting at specific times, whether on a particular date or on recurring weekdays. This app uses the NAudio library for controlling the system volume and provides a user-friendly interface for managing mute schedules.",
-        technologies: ["C #", "Json", ".NET Framework", "Windows Forms"],
+        technologies: ["C #", "Json", ".NET Framework", "Windows Forms","Git"],
         features: [
 "One-click mute/unmute system audio",
 "Lightweight and fast desktop application",
@@ -58,21 +58,21 @@ features: [
         demo: "https://github.com/TCHEUFFA-DARREN-RAYAN/COMPUTER-MUTER-APP/blob/master/README.md"
     },
     4: {
-        title: "Smart Wearable Device",
-        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23007bff' opacity='0.1'/%3E%3Crect x='120' y='100' width='160' height='50' rx='25' fill='%23007bff' opacity='0.3'/%3E%3Ccircle cx='160' cy='125' r='12' fill='%23007bff'/%3E%3Ccircle cx='240' cy='125' r='12' fill='%23007bff'/%3E%3Cpath d='M100 125 Q120 125 120 125' stroke='%23007bff' stroke-width='8' stroke-linecap='round'/%3E%3Cpath d='M280 125 Q300 125 300 125' stroke='%23007bff' stroke-width='8' stroke-linecap='round'/%3E%3Cpath d='M140 170 Q200 160 260 170' stroke='%23007bff' stroke-width='2' fill='none'/%3E%3Ctext x='200' y='220' text-anchor='middle' fill='%23007bff' font-family='Arial' font-size='16'%3ESmart Wearable%3C/text%3E%3C/svg%3E",
-        description: "Health monitoring wearable device with advanced biometric sensors, Bluetooth LE connectivity, and companion mobile application for comprehensive health tracking.",
-        technologies: ["nRF52", "BLE", "Flutter", "Firebase", "TensorFlow Lite"],
+        title: "Mixed Project Contributions",
+        image: "images/mixed-contribution.png",
+        description: "Contributed to multiple open-source projects by fixing bugs, adding features, and improving documentation, gaining hands-on experience with real-world codebases and Git workflows.",
+         technologies: ["C #", "Json", ".NET Framework", "Windows Forms","Git"],
         features: [
-            "Continuous heart rate monitoring",
-            "Sleep pattern analysis",
-            "Activity tracking and recognition",
-            "Battery optimization algorithms",
-            "Secure data synchronization",
-            "Personalized health insights"
+"Fixed bugs and added small features to existing projects",
+"Improved project documentation for clarity",
+"Collaborated on multiple codebases using Git",
+"Learned to understand and navigate other people's code",
+"Practiced version control and pull request workflows",
+"Enhanced problem-solving and coding skills"
         ],
-        challenges: "Balancing power consumption with continuous monitoring capabilities while maintaining reliable BLE connectivity and ensuring data privacy.",
-        github: "https://github.com/yourusername/smart-wearable",
-        demo: "https://your-demo-link.com"
+        challenges: "Understanding someone else’s codebase, fixing bugs, and adding features while maintaining the original project’s integrity. This involved learning new technologies, adapting to different coding styles, and ensuring compatibility with existing systems.",
+        github: "https://github.com/TCHEUFFA-DARREN-RAYAN/MIXED-PROJECT-CONTRIBUTIONS",
+        demo: "https://github.com/TCHEUFFA-DARREN-RAYAN/MIXED-PROJECT-CONTRIBUTIONS/blob/master/README.md"
     },
     5: {
         title: "Mesh Network Protocol",
