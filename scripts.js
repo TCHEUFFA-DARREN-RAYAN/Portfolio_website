@@ -88,8 +88,8 @@ features: [
             "Network diagnostics tools"
         ],
         challenges: "Developing efficient routing algorithms that adapt to changing network topology while minimizing power consumption and maintaining message reliability.",
-        github: "https://github.com/yourusername/mesh-network-protocol",
-        demo: "https://your-demo-link.com"
+        github: "https://app.cmngsn.com/page/e55aae70-7b1b-11f0-b9b8-f7c7823f8d90",
+        demo: "https://app.cmngsn.com/page/e55aae70-7b1b-11f0-b9b8-f7c7823f8d90"
     },
     6: {
         title: "Edge AI Device",
@@ -105,8 +105,8 @@ features: [
             "Remote model updates"
         ],
         challenges: "Optimizing deep learning models for edge deployment while maintaining accuracy and achieving real-time performance on resource-constrained hardware.",
-          github: "https://github.com/yourusername/edge-ai-device",
-        demo: "https://your-demo-link.com"
+          github: "https://app.cmngsn.com/page/e55aae70-7b1b-11f0-b9b8-f7c7823f8d90",
+        demo: "https://app.cmngsn.com/page/e55aae70-7b1b-11f0-b9b8-f7c7823f8d90"
     }
 };
 
