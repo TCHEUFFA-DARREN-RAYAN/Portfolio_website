@@ -20,38 +20,42 @@ features: [
         demo: "https://samirabeautician.com/"
     },
     2: {
-        title: "Industrial IoT Monitor",
-        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23007bff' opacity='0.1'/%3E%3Crect x='150' y='80' width='100' height='90' fill='none' stroke='%23007bff' stroke-width='3'/%3E%3Ccircle cx='120' cy='125' r='12' fill='%23007bff'/%3E%3Ccircle cx='280' cy='125' r='12' fill='%23007bff'/%3E%3Cpath d='M132 125 L150 125 M250 125 L268 125' stroke='%23007bff' stroke-width='3'/%3E%3Cpath d='M180 190 L180 210 M190 190 L190 205 M210 190 L210 215 M220 190 L220 200' stroke='%23007bff' stroke-width='2'/%3E%3Ctext x='200' y='235' text-anchor='middle' fill='%23007bff' font-family='Arial' font-size='16'%3EIndustrial Monitor%3C/text%3E%3C/svg%3E",
-        description: "Enterprise-grade monitoring system for industrial equipment featuring predictive maintenance capabilities, real-time analytics, and comprehensive reporting dashboard.",
-        technologies: ["STM32", "LoRaWAN", "Python", "PostgreSQL", "Docker"],
+        title: "Laval School Website",
+        image: "images/laval_website.jpg",
+        description: "Developed a responsive and user-friendly school website to provide easy access to academic information, announcements, and resources for students, teachers, and parents, ensuring better communication and engagement.",
+        technologies: ["HTML", "CSS", "JavaScript", "Json"],
         features: [
-            "Predictive maintenance algorithms",
-            "Real-time equipment monitoring",
+            "Student & Teacher Profiles",
+            "Downloadable Resources",
             "Historical data analysis",
-            "Automated alert system",
-            "Custom reporting dashboard",
-            "Multi-site deployment support"
+            "Grade/Result Portal",
+            "Photo & Video Gallery",
+            "Contact & Feedback Form",
+            "Mobile-Friendly Design",
+            "Multilingual Support"
+
         ],
-        challenges: "Implementing reliable long-range communication in harsh industrial environments while processing large volumes of sensor data for predictive analytics.",
-        github: "https://github.com/yourusername/industrial-iot-monitor",
-        demo: "https://your-demo-link.com"
+        challenges: "The main challenges were creating a clean, visually appealing design while ensuring the website was fully responsive and fast-loading across devices. Optimizing images, selecting a suitable color scheme, and organizing content for easy navigation were key to delivering an attractive and user-friendly school website.",
+        github: "https://github.com/TCHEUFFA-DARREN-RAYAN/LAVAL-WEBSITE",
+        demo: "https://tcheuffa-darren-rayan.github.io/LAVAL-WEBSITE/"
     },
     3: {
-        title: "Weather Station Network",
-        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23007bff' opacity='0.1'/%3E%3Cellipse cx='200' cy='150' rx='80' ry='25' fill='%23007bff' opacity='0.3'/%3E%3Cpath d='M200 80 L200 125' stroke='%23007bff' stroke-width='4'/%3E%3Ccircle cx='200' cy='80' r='12' fill='%23007bff'/%3E%3Cpath d='M180 100 Q200 90 220 100' stroke='%23007bff' stroke-width='2' fill='none'/%3E%3Cpath d='M160 120 Q200 110 240 120' stroke='%23007bff' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='140' r='6' fill='%23007bff' opacity='0.7'/%3E%3Ccircle cx='250' cy='140' r='6' fill='%23007bff' opacity='0.7'/%3E%3Ctext x='200' y='230' text-anchor='middle' fill='%23007bff' font-family='Arial' font-size='16'%3EWeather Station%3C/text%3E%3C/svg%3E",
-        description: "Distributed network of weather monitoring stations providing real-time environmental data with web-based dashboard for data visualization and analysis.",
-        technologies: ["Arduino", "WiFi", "Node.js", "MongoDB", "Chart.js"],
+        title: "Computer Muted App",
+        image: "images/scheduler .png",
+        description: "A simple and efficient Windows Forms application that allows users to schedule automatic system muting at specific times, whether on a particular date or on recurring weekdays. This app uses the NAudio library for controlling the system volume and provides a user-friendly interface for managing mute schedules.",
+        technologies: ["C #", "Json", ".NET Framework", "Windows Forms"],
         features: [
-            "Multiple sensor integration",
-            "Real-time data streaming",
-            "Historical weather trends",
-            "Interactive data visualization",
-            "API for third-party integration",
-            "Mobile-responsive dashboard"
+"One-click mute/unmute system audio",
+"Lightweight and fast desktop application",
+"Simple and intuitive Windows interface",
+"Runs in the background with minimal resources",
+"Quick access without opening system settings",
+"Portable and easy to use",
+"Start up at boot",
         ],
-        challenges: "Ensuring data consistency across distributed sensors and implementing efficient data aggregation for real-time dashboard updates.",
-        github: "https://github.com/yourusername/weather-station-network",
-        demo: "https://your-demo-link.com"
+        challenges: "Figuring out how to access and control the computer’s audio system while building a simple, user-friendly app.",
+        github: "https://github.com/TCHEUFFA-DARREN-RAYAN/COMPUTER-MUTER-APP",
+        demo: "https://github.com/TCHEUFFA-DARREN-RAYAN/COMPUTER-MUTER-APP/blob/master/README.md"
     },
     4: {
         title: "Smart Wearable Device",
