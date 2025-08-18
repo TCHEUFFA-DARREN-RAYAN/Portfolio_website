@@ -558,15 +558,15 @@ document.addEventListener('keydown', (e) => {
 // Resume Download Function
 function downloadResume() {
     // In a real implementation, this would trigger the actual CV download
-    showNotification('Resume download would start here. Please replace with your actual CV file.', 'info');
+    showNotification('Resume has been downloaded .', 'info');
     
-    // Example of how to trigger a real download:
-    // const link = document.createElement('a');
-    // link.href = 'path/to/your/resume.pdf';
-    // link.download = 'YourName_Resume.pdf';
-    // document.body.appendChild(link);
-    // link.click();
-    // document.body.removeChild(link);
+    // Example of how to trigger a download
+    const link = document.createElement('a');
+    link.href = 'TCHEUFFA DARREN - SOFTWARE DEVELOPER.pdf';
+    link.download = 'TCHEUFFA DARREN - SOFTWARE DEVELOPER.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 // Utility Functions
