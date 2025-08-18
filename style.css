@@ -548,6 +548,11 @@ h4 { font-size: 1.5rem; }
     color: white;
     transform: translateY(-2px);
 }
+.skill-tag img {
+    
+  width: 20px;
+  height: 20px;
+}
 
 /* Resume Section */
 .resume {

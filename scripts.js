@@ -606,25 +606,37 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.transform = 'translateY(0) scale(1)';
         });
     });
-    
-    // Add typing effect to hero title (optional enhancement)
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        const text = heroTitle.textContent;
-        heroTitle.textContent = '';
-        let i = 0;
-        
-        const typeWriter = () => {
-            if (i < text.length) {
-                heroTitle.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50);
-            }
-        };
-        
-        // Start typing effect after a short delay
-        setTimeout(typeWriter, 1000);
-    }
+
+// Add typing effect to hero title (optional enhancement)
+const heroTitle = document.querySelector('.hero-title');
+if (heroTitle) {
+    const text = heroTitle.textContent.trim();
+    heroTitle.textContent = '';
+    let i = 0;
+    let deleting = false;
+
+    const typeWriter = () => {
+        if (!deleting && i < text.length) {
+            heroTitle.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 80); // typing speed
+        } 
+        else if (deleting && i > 0) {
+            heroTitle.textContent = text.substring(0, i - 1);
+            i--;
+            setTimeout(typeWriter, 60); // deleting speed
+        } 
+        else {
+            // switch between typing and deleting
+            deleting = !deleting;
+            setTimeout(typeWriter, 1000); // pause before switching
+        }
+    };
+
+    // Start typing effect after a short delay
+    setTimeout(typeWriter, 1000);
+}
+
 });
 
 // Add smooth reveal animation for sections
@@ -647,8 +659,8 @@ window.addEventListener('scroll', revealSections);
 // Initialize reveal on load
 document.addEventListener('DOMContentLoaded', revealSections);
 
-// name animation 
 
+// name animation 
 const name = "TCHEUFFA DARREN RAYAN";
 let i = 0;
 const container = document.getElementById("typewriter");
