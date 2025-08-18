@@ -237,42 +237,43 @@ function setupScrollEffects() {
 // Form Handling
 function setupFormHandling() {
     const contactForm = document.getElementById('contactForm');
-    
+
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         // Get form data
         const formData = new FormData(contactForm);
         const name = formData.get('name');
         const email = formData.get('email');
         const message = formData.get('message');
-        
+
         // Simple form validation
         if (!name || !email || !message) {
             showNotification('Please fill in all fields.', 'error');
             return;
         }
-        
+
         if (!isValidEmail(email)) {
             showNotification('Please enter a valid email address.', 'error');
             return;
         }
-        
-        // Simulate form submission
-        const submitButton = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitButton.innerHTML;
-        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-        submitButton.disabled = true;
-        
-        // Simulate API call delay
-        setTimeout(() => {
-            showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
-            contactForm.reset();
-            submitButton.innerHTML = originalText;
-            submitButton.disabled = false;
-        }, 2000);
+
+        // Create the mailto link
+        const subject = encodeURIComponent(`Message from ${name} via Portfolio Contact Form `);
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+        const mailtoLink = `mailto:tcheuffadarren1@gmail.com?subject=${subject}&body=${body}`;
+
+        // Open user's email client
+        window.location.href = mailtoLink;
+
+        // Optional: show notification
+        showNotification('Your email client has been opened. Press send to send your message!', 'success');
+
+        // Reset the form
+        contactForm.reset();
     });
 }
+
 
 // Email validation
 function isValidEmail(email) {
