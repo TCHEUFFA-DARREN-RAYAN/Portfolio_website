@@ -114,22 +114,22 @@ h4 { font-size: 1.5rem; }
 }
 
 /* Buttons */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-   
-}
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
 .btn-posiiton {
     position: relative;
     left: 25%;
@@ -293,11 +293,12 @@ h4 { font-size: 1.5rem; }
 
 /* Hero Section */
 .hero {
+    position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+    /* background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%); */
     position: relative;
     overflow: hidden;
 }
