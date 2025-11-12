@@ -90,8 +90,8 @@ features: [
   "Remote monitoring via web dashboard"
 ],
         challenges: "Understanding sensor datasheets to implement correct methods, testing multiple sensors for accurate detection, and organizing 3000+ lines of code into manageable classes.",
-        github: "https://app.cmngsn.com/page/e55aae70-7b1b-11f0-b9b8-f7c7823f8d90",
-        demo: "https://app.cmngsn.com/page/e55aae70-7b1b-11f0-b9b8-f7c7823f8d90"
+        github: "https://smart-parking-website-70hn.onrender.com",
+        demo: "https://smart-parking-website-70hn.onrender.com"
     },
     6: {
         title: "Edge AI Device",
