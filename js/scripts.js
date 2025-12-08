@@ -89,7 +89,7 @@ features: [
   "Optional GPS tracking and location registration",
   "Remote monitoring via web dashboard"
 ],
-        challenges: "Understanding sensor datasheets to implement correct methods, testing multiple sensors for accurate detection, and organizing 3000+ lines of code into manageable classes.",
+        challenges: "Understanding sensor datasheets to implement correct methods, testing multiple sensors for accurate detection, and organizing 5000+ lines of code into manageable classes.",
         github: "https://smart-parking-website-70hn.onrender.com",
         demo: "https://smart-parking-website-70hn.onrender.com"
     },
@@ -119,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupScrollEffects();
     setupFormHandling();
     setupAnimations();
+    setupStatsCounter();
 });
 
 // Theme Management
@@ -660,23 +661,75 @@ window.addEventListener('scroll', revealSections);
 // Initialize reveal on load
 document.addEventListener('DOMContentLoaded', revealSections);
 
+// Stats Counter Animation
+function setupStatsCounter() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    const animateCounter = (element) => {
+        const target = parseInt(element.getAttribute('data-target'));
+        const duration = 2000; // 2 seconds
+        const increment = target / (duration / 16); // 60fps
+        let current = 0;
+        
+        const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+                element.textContent = Math.floor(current);
+                requestAnimationFrame(updateCounter);
+            } else {
+                // Add "+" for projects stat
+                if (target === 8 && element.closest('.stat-item')?.querySelector('.stat-label')?.textContent === 'Projects') {
+                    element.textContent = target + '+';
+                } else {
+                    element.textContent = target;
+                }
+            }
+        };
+        
+        updateCounter();
+    };
+    
+    // Intersection Observer for stats
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                entry.target.classList.add('counted');
+                animateCounter(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+    
+    statNumbers.forEach(stat => {
+        statsObserver.observe(stat);
+    });
+}
+
 
 // name animation 
 const name = "TCHEUFFA DARREN RAYAN";
 let i = 0;
 const container = document.getElementById("typewriter");
 
-function type() {
-  if (i < name.length) {
-    container.textContent += name[i];
-    i++;
-    setTimeout(type, 100); // typing speed
-  } else {
-    setTimeout(() => {
-      container.textContent = ""; // erase and repeat
-      i = 0;
-      type();
-    }, 2000);
-  }
+if (container) {
+    // Initialize with empty text for typewriter effect
+    container.textContent = "";
+    
+    function type() {
+        if (i < name.length) {
+            container.textContent += name[i];
+            i++;
+            setTimeout(type, 100); // typing speed
+        } else {
+            setTimeout(() => {
+                container.textContent = ""; // erase and repeat
+                i = 0;
+                type();
+            }, 2000);
+        }
+    }
+    
+    // Start typing after a short delay
+    setTimeout(type, 500);
 }
-type();

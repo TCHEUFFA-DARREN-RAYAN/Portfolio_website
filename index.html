@@ -17,7 +17,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo header-name-bounce">
-                <a id="typewriter" class=" header-name-color" href="#home"></a> <!-- name here -->
+                <a id="typewriter" class="header-name-color" href="#home" aria-label="TCHEUFFA DARREN RAYAN - Home"></a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -77,15 +77,50 @@
                 <div class="particle"></div>
             </div>
             <div class="hero-content">
+                <!-- Developer-themed floating elements - moved to background -->
+                <div class="code-elements">
+                    <span class="code-symbol" data-symbol="C#">C#</span>
+                    <span class="code-symbol" data-symbol="SQL">SQL</span>
+                    <span class="code-symbol" data-symbol="PHP">PHP</span>
+                    <span class="code-symbol" data-symbol="JAVA">JAVA</span>
+                    <span class="code-symbol" data-symbol="JAVASCRIPT">JAVASCRIPT</span>
+                    <span class="code-symbol" data-symbol="HTML">HTML</span>
+                    <span class="code-symbol" data-symbol="CSS">CSS</span>
+                    <span class="code-symbol" data-symbol="C++">C++</span>
+                    <span class="code-symbol" data-symbol="NODE">NODE</span>
+                    <span class="code-symbol" data-symbol="REACT">REACT</span>
+                    <span class="code-symbol" data-symbol="BOOTSTRAP">BOOTSTRAP</span>
+                    <span class="code-symbol" data-symbol="MONGODB">MONGODB</span>
+                </div>
                 <div class="hero-image">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='%23007bff' opacity='0.2'/%3E%3Ccircle cx='100' cy='85' r='25' fill='%23007bff' opacity='0.5'/%3E%3Cpath d='M70 130 Q100 120 130 130' stroke='%23007bff' stroke-width='3' fill='none' opacity='0.7'/%3E%3Ctext x='100' y='170' text-anchor='middle' fill='%23007bff' font-family='Arial' font-size='12'%3EProfessional Photo%3C/text%3E%3C/svg%3E"
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2300d4ff;stop-opacity:0.3'/%3E%3Cstop offset='100%25' style='stop-color:%230099cc;stop-opacity:0.3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='150' cy='150' r='140' fill='url(%23grad)'/%3E%3Ccircle cx='150' cy='150' r='120' fill='none' stroke='%2300d4ff' stroke-width='2' opacity='0.5'/%3E%3Ccircle cx='150' cy='120' r='40' fill='%2300d4ff' opacity='0.2'/%3E%3Cpath d='M100 200 Q150 190 200 200' stroke='%2300d4ff' stroke-width='3' fill='none' opacity='0.6'/%3E%3Ctext x='150' y='250' text-anchor='middle' fill='%2300d4ff' font-family='Arial, sans-serif' font-size='16' font-weight='bold' opacity='0.7'%3E%3C/text%3E%3C/svg%3E"
                         alt="Professional Headshot" class="profile-image">
                 </div>
                 <h1 class="hero-title">Embedded & Full-Stack Developer</h1>
                 <p class="hero-subtitle">Designing Intelligent Solutions Across Embedded and Web Platforms</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Code Quality</div>
+                    </div>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Contact Me
+                    </a>
                 </div>
             </div>
         </div>
@@ -98,37 +133,41 @@
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-intro">
-                        Hi, I'm <i
-                            style="font-family: 'Courier New', Courier, monospace; color: rgb(78, 78, 160);">Darren
-                            Rayan Tcheuffa
-                            - </i> a Passionate embedded and full-stack developer with expertise in IoT and
-                        full-stack web development.
-                        I create innovative, connected solutions that bridge the physical and digital worlds, designing
-                        intelligent devices and applications that collect
-                        , process, and transmit data to deliver meaningful user experiences. Always eager to tackle
-                        challenging problems and bring ideas to life through technology.
+                        Hi, I'm <strong style="color: var(--primary-color);">Darren Rayan Tcheuffa</strong> — a passionate embedded and full-stack developer with expertise in IoT and full-stack web development.
+                        I create innovative, connected solutions that bridge the physical and digital worlds, designing intelligent devices and applications that collect, process, and transmit data to deliver meaningful user experiences. Always eager to tackle challenging problems and bring ideas to life through technology.
                     </p>
                     <p>
-                        My journey in technology began with a fascination for how everyday objects could become
-                        intelligent through sensors, microcontrollers, and seamless connectivity.
-                        Over the years, I have developed projects ranging from smart IoT devices to embedded systems and
-                        web applications, always prioritizing efficiency, reliability, and user-centric design.
-                        I thrive on solving complex problems, integrating hardware and software, and creating solutions
-                        that deliver meaningful real-world impact.
+                        My journey in technology began with a fascination for how everyday objects could become intelligent through sensors, microcontrollers, and seamless connectivity.
+                        Over the years, I have developed projects ranging from smart IoT devices to embedded systems and web applications, always prioritizing efficiency, reliability, and user-centric design.
+                        I thrive on solving complex problems, integrating hardware and software, and creating solutions that deliver meaningful real-world impact.
                     </p>
                     <p>
                         I believe in the power of technology to solve real-world problems and improve people's lives.
-                        Whether it's optimizing energy consumption in smart homes or developing robust communication
-                        protocols for industrial applications, I'm driven by the challenge of making complex systems
-                        work seamlessly.
+                        Whether it's optimizing energy consumption in smart homes or developing robust communication protocols for industrial applications, I'm driven by the challenge of making complex systems work seamlessly.
                     </p>
-                    <div class="fun-fact ">
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <i class="fas fa-code"></i>
+                            <h4>Clean Code</h4>
+                            <p>Writing maintainable, scalable, and efficient code</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Innovation</h4>
+                            <p>Transforming ideas into functional solutions</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Collaboration</h4>
+                            <p>Working effectively in team environments</p>
+                        </div>
+                    </div>
+                    <div class="fun-fact">
                         <h3>
                             <i class="fas fa-lightbulb" style="color: #209dd3;"></i>
                             Fun Fact
                         </h3>
-                        <p>Tech isn’t just my career—it’s my hobby. From smart home experiments to custom keyboards, I’m
-                            always building something new.</p>
+                        <p>Tech isn't just a career—it's a hobby. From smart home experiments to custom keyboards, I'm always building something new.</p>
                     </div>
                 </div>
             </div>
@@ -281,14 +320,50 @@
                         <p class="project-description">An interactive 3D website that showcases visual elements and
                             animations, providing users with an engaging and immersive browsing experience.</p>
                         <div class="project-tags">
-                            <!-- <span class="tag">Raspberry Pi</span>
-                            <span class="tag">TensorFlow</span>
-                            <span class="tag">OpenCV</span> -->
                         </div>
-                        <!-- <button class="btn btn-outline project-btn" onclick="openModal(6)">Learn More</button> -->
-                        <a href="https://app.cmngsn.com/page/e55aae70-7b1b-11f0-b9b8-f7c7823f8d90"><button
-                                class="btn btn-posiiton  btn-outline project-btn">Learn More</button></a>
+                        <button class="btn btn-position btn-outline project-btn"
+                        onclick="window.location.href='https://tcheuffa-darren-rayan.github.io/3D-Portfolio-Desktop-View/'">
+                    Learn More
+                </button>
+                
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience/Stats Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Highlights</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>8+ Projects</h3>
+                    <p>Successfully delivered projects across web and embedded systems</p>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Open Source</h3>
+                    <p>Active contributor to open-source projects and community</p>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>IoT Expertise</h3>
+                    <p>Specialized in ESP32, sensors, and IoT solutions</p>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Full-Stack</h3>
+                    <p>End-to-end development from frontend to backend</p>
                 </div>
             </div>
         </div>
@@ -470,15 +545,6 @@
                             <i class="fab fa-js" style="color: #f7df1e;"></i>
                             React
                         </span>
-                        <span class="skill-tag">
-                            <i class="fab fa-angular" style="color: #dd0031;"></i>
-                            Angular
-                        </span>
-                        <span class="skill-tag">
-                            <i class="fab fa-vuejs" style="color: #42b883;"></i>
-                            Vue.js
-                        </span>
-
 
 
                         <!-- Embedded Frameworks -->
@@ -504,16 +570,26 @@
     <!-- Resume Section -->
     <section id="resume" class="resume">
         <div class="container">
-            <h2 class="section-title">Resume</h2>
+            <h2 class="section-title">Resume & Portfolio</h2>
             <div class="resume-content">
-                <p class="resume-description">
-                    Download my complete resume to learn more about my experience, education, and professional
-                    achievements in embedded systems and Full-Stack development.
-                </p>
-                <a href="#" class="btn btn-primary resume-download" onclick="downloadResume()">
-                    <i class="fas fa-download"></i>
-                    Download CV
-                </a>
+                <div class="resume-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Download Resume</h3>
+                    <p>Get a comprehensive overview of my experience, education, and professional achievements in embedded systems and Full-Stack development.</p>
+                    <button type="button" class="btn btn-primary resume-download" onclick="downloadResume()">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </button>
+                </div>
+                <div class="resume-card">
+                    <i class="fab fa-github"></i>
+                    <h3>View GitHub</h3>
+                    <p>Explore my code repositories, contributions, and open-source projects to see my coding style and technical expertise.</p>
+                    <a href="https://github.com/TCHEUFFA-DARREN-RAYAN" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i>
+                        Visit GitHub
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -573,7 +649,7 @@
     <!-- Project Modal -->
     <div class="modal" id="projectModal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <button type="button" class="modal-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
             <div class="modal-body" id="modalBody">
                 <!-- Modal content will be inserted here -->
             </div>
